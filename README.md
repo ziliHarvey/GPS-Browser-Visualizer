@@ -15,5 +15,5 @@ roslaunch rosbridge_server rosbridge_websocket.launch
 cd GPS-Browser-Visualizer
 google-chrome visualizer.html
 cd ../data
-rosbag play -r sample_spp.bag
+rosbag play sample0.bag
 ```

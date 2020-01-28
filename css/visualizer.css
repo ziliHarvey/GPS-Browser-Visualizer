@@ -1,2 +1,11 @@
 body { margin:0; padding:0; }
-#map { position:absolute; top:0; bottom:0; width:100%; }
+#map { position:fixed; left:100px; top:0; bottom:0; width:100%; }
+.satellite {
+    width: 90px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: x;
+    background-color: #DAF7A6;
+    color: black;
+    border-color: black;
+}

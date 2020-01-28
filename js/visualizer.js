@@ -26,7 +26,7 @@ ros.on('close', function() {
 L.mapbox.accessToken = 'pk.eyJ1IjoiemlsaWhhcnZleSIsImEiOiJjazVuYnFpbDYxOHRhM2tvMXFyMDh6eGJyIn0.ABWx_KoY0Zrc1aIsSU0XNQ';
 var map = L.mapbox.map('map', 'mapbox.streets')
     .setView([0, 0], 3)
-    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v8'));;
+    .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/satellite-v8'));;
 var polyline = L.polyline([]).addTo(map);
 
 function draw() {

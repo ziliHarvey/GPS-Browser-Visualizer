@@ -4,6 +4,7 @@ body { margin:0; padding:0; }
 
 button {
     position: relative;
+    top : 80px;
     font-weight: bold;
     width: 90px;
     height: 60px;

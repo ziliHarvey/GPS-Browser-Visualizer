@@ -1,11 +1,28 @@
 body { margin:0; padding:0; }
+
 #map { position:fixed; left:100px; top:0; bottom:0; width:100%; }
-.satellite {
+
+button {
+    font-weight: bold;
     width: 90px;
     height: 60px;
     border-radius: 10px;
     font-size: x;
-    background-color: #DAF7A6;
     color: black;
     border-color: black;
+}
+button:focus {
+    background-color: red;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+.satellite {
+    background-color: #DAF7A6;
+}
+
+.streets {
+    background-color: #DAF7A6;
 }

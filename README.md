@@ -2,7 +2,7 @@
 A lightweight tool for visualizing gps trajectory in browser in real time
 
 ### Demo
-<img src="https://github.com/ziliHarvey/GPS-Browser-Visualizer/blob/master/demo0.gif" width=75% height=75%>
+<img src="https://github.com/ziliHarvey/GPS-Browser-Visualizer/blob/master/demo1.gif" width=75% height=75%>
 
 ### Dependency
 ROS, rosbridge, Mapbox.js, roslibjs

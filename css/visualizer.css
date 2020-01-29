@@ -4,7 +4,7 @@ body { margin:0; padding:0; }
 
 button {
     position: relative;
-    top : 80px;
+    top : 110px;
     font-weight: bold;
     width: 90px;
     height: 60px;
@@ -40,7 +40,7 @@ button:hover {
 
 .content {
     position: relative;
-    top:90px;
+    top:115px;
     left: 5px;
     display: none;
     overflow: hidden;

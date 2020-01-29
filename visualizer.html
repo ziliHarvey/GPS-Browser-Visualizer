@@ -17,9 +17,20 @@
                 <th><button class="streets" id="streets" onclick="switchLayer(0)">Streets</button></th>
             </tr>
             <tr>
-                <th><button class="satellite" id="satellite" onclick="switchLayer(1)">Satellite</button></th>
+                <th>
+                    <button class="satellite" id="satellite" onclick="switchLayer(1)">
+                        Satellite
+                    </button>
+                </th>
             </tr>
         </table>
+        <button class="panel" id="panel">Status</button>
+
+        <div class="content">
+            <p id="fix"></p>
+            <p id="position"></p>
+            <p id="speed"></p>
+        </div>
         
         <div id='map'></div>
         <script src="js/visualizer.js"></script>

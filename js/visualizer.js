@@ -1,6 +1,6 @@
 // gps
-var lats;
-var lngs;
+var lat = "N/A";
+var lng = "N/A";
 var center;
 var points = 0;
 var speed = 0;
@@ -68,6 +68,7 @@ listener_pos.subscribe(function(message) {
     center = L.latLng(lat, lng);
     if (center)
         draw();
+    document.getElementById("position").innerHTML = "Latitude:" + lat + " Longitude:" + lng;
 });
 
 
@@ -79,7 +80,14 @@ listener_vel.subscribe(function(message) {
     speed = Math.sqrt(vel_n*vel_n + vel_d*vel_d + vel_e*vel_e)*0.0036;
     var cur_color = switchColor(speed);
     polyline.setStyle({color: cur_color});
+    document.getElementById("speed").innerHTML = "Speed: " + speed.toPrecision(4) + " Km/h";
+
 });
+
+listener_status.subscribe(function(message) {
+    document.getElementById("fix").innerHTML = "Mode: " + message.fix_mode +
+                                               "                   Num_sat " + message.num_sat;
+})
 
 colors = ['#ffd22b', '#ffb524', '#fe981e', '#f67b18', '#ea6012', '#da460d', '#c62d09', '#ae1705', '#920b00'];
 function switchColor(speed) {
@@ -110,3 +118,15 @@ function switchLayer(layerId) {
     }
     layerGroup.clearLayers().addLayer(L.mapbox.styleLayer("mapbox://styles/mapbox/" + layerStyle));
 }
+
+var panel = document.getElementsByClassName("panel");
+panel[0].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    console.log(content);
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+});

@@ -24,8 +24,33 @@ button:hover {
 
 .satellite {
     background-color: #DAF7A6;
+    cursor: pointer;
 }
 
 .streets {
     background-color: #DAF7A6;
+    cursor: pointer;
+}
+
+.panel {
+    background-color: #DAF7A6;
+    cursor: pointer;
+    left: 3px; 
+}
+
+.content {
+    position: relative;
+    top:90px;
+    left: 5px;
+    display: none;
+    overflow: hidden;
+    background-color: #DAF7A6;
+    z-index: 3;
+    color:black;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: left;
+    opacity: 0.8;
 }

@@ -26,7 +26,8 @@ ros.on('close', function() {
 // map
 var layerStyle = "satellite-v8";
 
-L.mapbox.accessToken = 'pk.eyJ1IjoiemlsaWhhcnZleSIsImEiOiJjazVuYnFpbDYxOHRhM2tvMXFyMDh6eGJyIn0.ABWx_KoY0Zrc1aIsSU0XNQ';
+// example: https://docs.mapbox.com/mapbox.js/api/v3.2.1/
+L.mapbox.accessToken = "<INSERT YOUR MAPBOX API KEY HERE>";
 var map = L.mapbox.map('map', null, {minZoom:3})
     .setView([0, 0], 3);
 L.control.locate().addTo(map);

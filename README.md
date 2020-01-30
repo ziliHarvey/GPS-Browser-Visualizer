@@ -11,7 +11,7 @@ A lightweight tool for visualizing gps trajectory in browser in real time.
 [Swift ROS SDK](https://support.swiftnav.com/customer/en/portal/articles/2924342-using-ros-with-swift-navigation-gnss-devices), which isn't required for visualizing trajectory, is used to display speed and states. 
 
 ### Data
-All bags are collected around CMU neighborhood using a [Swift GNSS Receiver](https://www.swiftnav.com/duro) with realtime kinematic enabled for ensuring centimeter level error.
+All bags are collected around CMU neighborhood using a [Swift GNSS Receiver](https://www.swiftnav.com/duro) with RTK enabled.
 
 ### Install and usage
 Insert your mapbox api key [here](https://github.com/ziliHarvey/GPS-Browser-Visualizer/blob/master/js/visualizer.js#L30), and then
